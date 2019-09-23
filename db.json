@@ -1,14 +1,14 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "flights" : {
+     "price_check_okay":{
+          'itinerary_id': '68d6c029ed-e304-441a-bd55-190918101212', 
+          'succes_message': 'Price Check is success'
+        },
+      "itinerary_failure":[{"error_message":"Internal Server Error.Cleartrip System behaving badly.","error_code":570},
+                           {'error_message': 'The flight you were trying to book is no longer available. Please pick a different flight option.', 'error_code': 512},
+                          {'error_message': 'The fare of the flight you were trying to book has changed from 3765.0 to 4625. Please pick a different fare.', 'error_code': 513}],
+   
+      "book_failure":[{'error_message': 'Sorry, there was a problem with your booking. Do not try to rebook. Please contact your travel partner / travel desk. Trip ID : A1909170088.', 'error_code': 551},
+                      {'error_message': 'Cannot Retry a previous booking. Please create another itinerary if you want to book. ', 'error_code': 572}]
   }
 }
